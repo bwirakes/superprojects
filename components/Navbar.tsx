@@ -24,7 +24,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="sticky top-0 z-50 w-full bg-white border-b-2 border-black">
+        <nav className="sticky top-0 z-50 w-full bg-[#f7f7f7] border-b-2 border-black">
             <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20 md:h-24">
                     {/* Logo */}
