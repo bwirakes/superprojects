@@ -1,4 +1,5 @@
 import { brand } from "@/data/content";
+import Image from "next/image";
 
 export default function Footer() {
     const year = new Date().getFullYear();
@@ -7,10 +8,8 @@ export default function Footer() {
         <footer className="bg-white border-t-2 border-black py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1240px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                 <div>
-                    <h2 className="text-2xl font-heading font-black uppercase tracking-tight">
-                        {brand.name}
-                    </h2>
-                    <p className="mt-2 text-sm uppercase tracking-widest font-heading font-bold">
+                    <Image src="/logo.png" alt="SUPER PROJECTS" width={200} height={60} className="h-8 w-auto mb-2" />
+                    <p className="text-xs uppercase tracking-widest font-heading font-bold opacity-70">
                         {brand.tagline}
                     </p>
                 </div>
