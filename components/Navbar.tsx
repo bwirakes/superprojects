@@ -29,7 +29,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-20 md:h-24">
                     {/* Logo */}
                     <Link href="/" className="flex items-center">
-                        <Image src="/logo.png" alt="SUPER PROJECTS" width={300} height={100} className="h-10 md:h-12 w-auto" priority />
+                        <Image src="/logo-v2.png" alt="SUPER PROJECTS" width={300} height={100} className="h-10 md:h-12 w-auto" priority />
                     </Link>
 
                     {/* Desktop Nav */}
