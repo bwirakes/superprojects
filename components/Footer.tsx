@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="bg-[#f7f7f7] border-t-2 border-black py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-[1240px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                 <div>
-                    <Image src="/logo-v2.png" alt="SUPER PROJECTS" width={200} height={60} className="h-8 w-auto mb-2" />
+                    <Image src="/logo.svg" alt="SUPER PROJECTS" width={200} height={60} className="h-8 w-auto mb-2" />
                     <p className="text-xs uppercase tracking-widest font-heading font-bold opacity-70">
                         {brand.tagline}
                     </p>
