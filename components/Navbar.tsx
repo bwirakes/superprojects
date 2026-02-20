@@ -65,6 +65,7 @@ export default function Navbar() {
                             </SheetTrigger>
                             <SheetContent
                                 side="right"
+                                showCloseButton={false}
                                 className="w-full border-l-2 p-0 transition-colors duration-500"
                                 style={{
                                     backgroundColor: isHome ? 'var(--dynamic-bg, #ffffff)' : '#ffffff',
