@@ -38,8 +38,8 @@ export default function Navbar() {
             <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20 md:h-24">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center text-inherit">
-                        <LogoSVG className="h-10 md:h-12 w-[auto] fill-current" />
+                    <Link href="/" className="flex items-center text-inherit max-w-[70vw] md:max-w-none">
+                        <LogoSVG className="h-8 sm:h-10 md:h-12 w-auto fill-current" />
                     </Link>
 
                     {/* Desktop Nav */}
@@ -59,7 +59,7 @@ export default function Navbar() {
                     <div className="md:hidden">
                         <Sheet open={isOpen} onOpenChange={setIsOpen}>
                             <SheetTrigger asChild>
-                                <Button variant="ghost" size="icon" className="hover:bg-transparent text-inherit">
+                                <Button variant="ghost" size="icon" className="hover:bg-transparent text-inherit [&_svg]:text-inherit">
                                     <Menu className="h-8 w-8 text-inherit" />
                                 </Button>
                             </SheetTrigger>
@@ -68,7 +68,7 @@ export default function Navbar() {
                                 showCloseButton={false}
                                 className="w-full border-l-2 p-0 transition-colors duration-500"
                                 style={{
-                                    backgroundColor: isHome ? 'var(--dynamic-bg, #ffffff)' : '#ffffff',
+                                    backgroundColor: isHome ? 'var(--dynamic-bg, #f7f7f7)' : '#f7f7f7',
                                     color: isHome ? 'var(--dynamic-fg, #000000)' : '#000000',
                                     borderColor: isHome ? 'var(--dynamic-fg, #000000)' : '#000000'
                                 }}
@@ -77,8 +77,8 @@ export default function Navbar() {
                                     className="p-4 border-b-2 flex flex-row justify-between items-center"
                                     style={{ borderColor: isHome ? 'var(--dynamic-fg, #000000)' : '#000000' }}
                                 >
-                                    <SheetTitle className="text-xl font-heading font-black uppercase text-left text-inherit">
-                                        SUPER PROJECTS
+                                    <SheetTitle className="text-xl font-heading font-black uppercase text-left text-inherit flex items-center">
+                                        <LogoSVG className="h-6 sm:h-8 w-auto fill-current" />
                                     </SheetTitle>
                                     <Button
                                         variant="ghost"

@@ -1,14 +1,26 @@
+"use client";
+
 import { brand } from "@/data/content";
-import Image from "next/image";
+import { usePathname } from "next/navigation";
+import LogoSVG from "./LogoSVG";
 
 export default function Footer() {
     const year = new Date().getFullYear();
+    const pathname = usePathname();
+    const isHome = pathname === "/";
 
     return (
-        <footer className="bg-[#f7f7f7] border-t-2 border-black py-12 px-4 sm:px-6 lg:px-8">
+        <footer
+            className="border-t-2 transition-colors duration-500 py-12 px-4 sm:px-6 lg:px-8"
+            style={{
+                backgroundColor: isHome ? 'var(--dynamic-bg, #f7f7f7)' : '#f7f7f7',
+                color: isHome ? 'var(--dynamic-fg, #000000)' : '#000000',
+                borderColor: isHome ? 'var(--dynamic-fg, #000000)' : '#000000'
+            }}
+        >
             <div className="max-w-[1240px] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                 <div>
-                    <Image src="/logo.svg" alt="SUPER PROJECTS" width={200} height={60} className="h-8 w-auto mb-2" />
+                    <LogoSVG className="h-8 w-[auto] mb-2 fill-current" />
                     <p className="text-xs uppercase tracking-widest font-heading font-bold opacity-70">
                         {brand.tagline}
                     </p>
