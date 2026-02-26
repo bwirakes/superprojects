@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const inter = Inter({
-  variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "700", "900"],
 });
@@ -21,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body
-        className={`${inter.variable} antialiased bg-white text-black font-body selection:bg-black selection:text-white`}
+        className="antialiased bg-white text-black selection:bg-black selection:text-white"
       >
         <Navbar />
         <main className="min-h-screen">
