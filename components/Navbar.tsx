@@ -77,8 +77,8 @@ export default function Navbar() {
                                     className="p-4 border-b-2 flex flex-row justify-between items-center"
                                     style={{ borderColor: isHome ? 'var(--dynamic-fg, #000000)' : '#000000' }}
                                 >
-                                    <SheetTitle className="text-xl font-heading font-black uppercase text-left text-inherit">
-                                        SUPER PROJECTS
+                                    <SheetTitle className="text-xl font-heading font-black uppercase text-left text-inherit flex items-center">
+                                        <LogoSVG className="h-6 sm:h-8 w-auto fill-current" />
                                     </SheetTitle>
                                     <Button
                                         variant="ghost"
